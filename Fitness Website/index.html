@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Everytime Fitness</title>
+
+ <!-- Required meta tags -->
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+ <!-- Bootstrap CSS -->
+ <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+
+
+    .carousel-item{
+      position: relative;
+      height: 45rem;
+      background-position:center;
+      background-image: none;
+      color: white;
+
+
+      background-size: cover;
+      
+    }
+    .container{
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      padding-bottom: 50px;
+    }
+  
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.header-background {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background-image: url(image.jpg); 
+  background-size: cover;
+  opacity: 0.5; 
+}
+
+
+.header-content {
+  background-color: rgba(255, 255, 255, 0.8); 
+  display: inline-block;
+  padding: 20px;
+}
+
+
+.background-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.5; 
+}
+
+
+nav {
+  background-color: #b6ffd2;
+  color: #fff;
+  padding: 10px;
+  text-align: right;
+  position: absolute;
+  top: 30px;
+  right: 20px; 
+  transform: translate(-50%, 50%);
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+}
+
+.background-image {
+  width: 20%;
+  max-height: 150px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: brightness(100%); 
+}
+
+
+.hero-section {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 100px;
+  color:red;
+}
+
+.hero-section h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.hero-section p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.cta-button {
+  background-color: #b6ffd2;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px 40px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #d8b6ff;
+}
+
+.services-section {
+  background-color: #f5faff;
+  padding: 50px 0;
+}
+
+.services-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #918cff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.services-item {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #f9faff;
+}
+
+.services-item:hover {
+  transform: translateY(-5px);
+}
+
+.services-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #918cff;
+  text-transform: uppercase;
+}
+
+.services-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+.testimonials-section {
+  background-color: #f5faff;
+  padding: 50px 0;
+}
+
+.testimonial {
+  margin: 30px;
+  padding: 30px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.testimonial p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.testimonial span {
+  font-style: italic;
+  color: #999;
+}
+
+.trainers-section {
+  background-color: #f5faff;
+  padding: 50px 0;
+}
+
+.trainers-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #918cff;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.trainer-list {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.trainer-item {
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  background-color: #f9faff;
+  text-align: center;
+}
+
+.trainer-item img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.trainer-item h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #918cff;
+  text-transform: uppercase;
+}
+
+.trainer-item p {
+  font-size: 16px;
+  color: #666;
+}
+
+.schedule-section {
+  background-color: #f5faff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.schedule-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #918cff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.schedule-table {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.schedule-table th {
+  font-size: 18px;
+  padding: 10px;
+  background-color: #d8b6ff;
+  color: #fff;
+  border: 1px solid #ccc;
+}
+
+.schedule-table td {
+  font-size: 16px;
+  color: #666;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.contact-section {
+  background-color: #f5faff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.contact-section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #918cff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form input[type="submit"] {
+  background-color: #b6ffd2;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form input[type="submit"]:hover {
+  background-color: #d8b6ff;
+}
+
+.social-media-section {
+  background-color: #d8b6ff;
+  padding: 20px;
+  text-align: center;
+}
+
+.social-media-section a {
+  color: #fff;
+  text-decoration: none;
+  margin: 10px;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.social-media-section a:hover {
+  color: #ccc;
+}
+
+footer {
+  background-color: #d8b6ff;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+</style>
+</head>
+<body>
+
+  <!-- Optional JavaScript -->
+      <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  
+  
+  <header>
+  <h1>Everytime Fitness</h1>
+  <img src="image.jpg" alt="Fitness Background Image" class="background-image">
+  </header>
+
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
+  <br>
+
+  <section class="background-section">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image: url(./Fitness\ Website/dumble.jpg);">
+          <div class="container">
+            <h1>Get Fit, Stay Healthy!</h1>
+            <p>Join our fitness community and achieve your goals.</p>
+            <a href="#" class="cta-button">Get Started</a>
+
+          </div>
+          
+        </div>
+        <div class="carousel-item" style="background-image: url(./Fitness\ Website/gym.jpg);">
+          
+          <div class="container">
+            <h1>Get Fit, Stay Healthy!</h1>
+            <p>Join our fitness community and achieve your goals.</p>
+            <a href="#" class="cta-button">Get Started</a>
+
+          </div>
+         
+        </div>
+        <div class="carousel-item" style="background-image: url(./Fitness\ Website/gym1.jpg);">
+          <div class="container">
+            <h1>Get Fit, Stay Healthy!</h1>
+            <p>Join our fitness community and achieve your goals.</p>
+            <a href="#" class="cta-button">Get Started</a>
+
+          </div>
+         
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+
+    
+
+  <!-- <section class="background-section">
+    <div class="hero-section">
+      <h1>Get Fit, Stay Healthy!</h1>
+      <p>Join our fitness community and achieve your goals.</p>
+      <a href="#" class="cta-button">Get Started</a>
+    </div>
+  </section> -->
+
+  <section class="services-section">
+    <h2>Our Services</h2>
+    <ul class="services-list">
+      
+      <li class="services-item">
+        <h3>Gym</h3>
+        <img src="./Fitness\ Website/gym1.jpg" alt="">
+        <p>Stay in shape with our state-of-the-art gym equipment.</p>
+      </li>
+      <li class="services-item">
+        <h3>CrossFit</h3>
+        <p>Experience high-intensity workouts with CrossFit training.</p>
+      </li>
+      <li class="services-item">
+        <h3>Strength and Conditioning</h3>
+        <p>Build strength and improve endurance with specialized programs.</p>
+      </li>
+      <li class="services-item">
+        <h3>Cycling</h3>
+        <p>Pedal your way to fitness with indoor cycling classes.</p>
+      </li>
+      <li class="services-item">
+        <h3>Trampoline</h3>
+        <p>Bounce your way to a fun and energetic workout.</p>
+      </li>
+      <li class="services-item">
+        <h3>Pilates</h3>
+        <p>Strengthen your core and improve flexibility with Pilates exercises.</p>
+      </li>
+      <li class="services-item">
+        <h3>Zumba Class</h3>
+        <p>Dance your way to fitness with high-energy Zumba workouts.</p>
+      </li>
+      <li class="services-item">
+        <h3>Yoga</h3>
+        <p>Find balance and inner peace with our yoga classes.</p>
+      </li>
+      <li class="services-item">
+        <h3>Aerobics</h3>
+        <p>Get your heart pumping and improve cardiovascular fitness.</p>
+      </li>
+      <li class="services-item">
+        <h3>Dance Classes</h3>
+        <p>Learn various dance styles and have fun while working out.</p>
+      </li>
+      <li class="services-item">
+        <h3>HIIT</h3>
+        <p>Experience high-intensity interval training for maximum calorie burn.</p>
+      </li>
+      <li class="services-item">
+        <h3>Nutrition Consulting</h3>
+        <p>Receive personalized guidance on nutrition and diet planning.</p>
+      </li>
+      <li class="services-item">
+        <h3>Weight Training</h3>
+        <p>Build muscle and increase strength with weightlifting exercises.</p>
+      </li>
+      <li class="services-item">
+        <h3>Fat Loss Classes</h3>
+        <p>Target fat burning and achieve your weight loss goals.</p>
+      </li>
+      <li class="services-item">
+        <h3>Kickboxing</h3>
+        <p>Learn self-defense techniques while improving your fitness level.</p>
+      </li>
+      <li class="services-item">
+        <h3>Personal Training</h3>
+        <p>Get one-on-one guidance and support from our experienced trainers.</p>
+      </li>
+      <li class="services-item">
+        <h3>Cardio Training</h3>
+        <p>Improve cardiovascular health and endurance through cardio exercises.</p>
+      </li>
+      <li class="services-item">
+        <h3>Functional Training</h3>
+        <p>Train your body for everyday movements and enhance overall functionality.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section class="testimonials-section">
+    <h2>What Our Clients Say</h2>
+    <div class="testimonial">
+      <img src="client1.jpg" alt="Client 1">
+      <p>"I have been a member of Everytime Fitness for a year now, and I have never felt healthier and more motivated. The trainers are exceptional, and the facilities are top-notch!"<br><span>- John Doe</span></p>
+    </div>
+    <div class="testimonial">
+      <img src="client2.jpg" alt="Client 2">
+      <p>"Everytime Fitness has transformed my life. The classes are challenging, the instructors are supportive, and the community is incredible. I highly recommend it!"<br><span>- Jane Smith</span></p>
+    </div>
+  </section>
+
+  <section class="trainers-section">
+    <h2>Meet Our Trainers</h2>
+    <div class="trainer-list">
+      <div class="trainer-item">
+        <img src="trainer1.jpg" alt="Trainer 1">
+        <h3>John Smith</h3>
+        <p>Certified Personal Trainer</p>
+      </div>
+      <div class="trainer-item">
+        <img src="trainer2.jpg" alt="Trainer 2">
+        <h3>Jane Doe</h3>
+        <p>Yoga Instructor</p>
+      </div>
+      <div class="trainer-item">
+        <img src="trainer3.jpg" alt="Trainer 3">
+        <h3>Mike Johnson</h3>
+        <p>CrossFit Coach</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="schedule-section">
+    <h2>Class Schedule</h2>
+    <table class="schedule-table">
+      <tr>
+        <th>Class</th>
+        <th>Time</th>
+        <th>Trainer</th>
+      </tr>
+      <tr>
+        <td>Yoga</td>
+        <td>8:00 AM - 9:00 AM</td>
+        <td>Jane Doe</td>
+      </tr>
+      <tr>
+        <td>CrossFit</td>
+        <td>10:00 AM - 11:00 AM</td>
+        <td>Mike Johnson</td>
+      </tr>
+      <tr>
+        <td>Zumba</td>
+        <td>4:00 PM - 5:00 PM</td>
+        <td>Sarah Williams</td>
+      </tr>
+      <tr>
+        <td>Strength Training</td>
+        <td>6:00 PM - 7:00 PM</td>
+        <td>John Smith</td>
+      </tr>
+      <tr>
+        <td>Pilates</td>
+        <td>8:00 PM - 9:00 PM</td>
+        <td>Emily Davis</td>
+      </tr>
+    </table>
+  </section>
+
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Message" required></textarea>
+      <input type="submit" value="Send Message">
+    </div>
+  </section>
+
+  <section class="social-media-section">
+    <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Everytime Fitness. All rights reserved.</p>
+    <p>Phone: 9958949582, 9625309524</p>
+    <p>Property Address: H-30, Site C, Surajpur, Greater Noida-201306</p>
+  </footer>
+</body>
+</html>
